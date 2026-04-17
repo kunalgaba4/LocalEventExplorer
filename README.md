@@ -9,11 +9,13 @@ A production-minded Android application for discovering and bookmarking local ev
 - **Detailed View**: See more information about an event, including location and time.
 - **Map Integration**: Deep link to Google Maps for navigation.
 - **Background Refresh**: Periodically updates event data using WorkManager.
+- **Location Awareness**: Real-time distance calculation to events based on user location.
 - **Clean Architecture**: Built using MVVM with a clear separation of concerns.
 
 ## Tech Stack
 - **Language**: Kotlin
 - **UI**: Jetpack Compose
+- **Permissions**: Accompanist Permissions
 - **DI**: Hilt
 - **Networking**: Retrofit + OkHttp
 - **Database**: Room

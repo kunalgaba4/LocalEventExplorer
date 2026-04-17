@@ -27,14 +27,22 @@ class EventRepositoryImpl @Inject constructor(
         val localEvents = dao.getAllEvents().map { entities -> entities.map { it.toEvent() } }
         
         // Simple TTL check: 5 minutes
-        val lastUpdated = 0L // In a real app, you'd store this in DataStore or a separate table
+        val lastUpdated = 0L
         val isCacheExpired = System.currentTimeMillis() - lastUpdated > 5 * 60 * 1000
 
         if (forceRefresh || isCacheExpired) {
             try {
                 val remoteEvents = api.getEvents()
+                val bookmarkedIds = dao.getBookmarkedEventIds()
+                
+                val entities = remoteEvents.map { dto ->
+                    dto.toEventEntity().copy(
+                        isBookmarked = bookmarkedIds.contains(dto.id)
+                    )
+                }
+                
                 dao.deleteNonBookmarkedEvents()
-                dao.insertEvents(remoteEvents.map { it.toEventEntity() })
+                dao.insertEvents(entities)
             } catch (e: IOException) {
                 emit(Resource.Error("Couldn't reach server. Check your internet connection."))
             } catch (e: HttpException) {

@@ -8,6 +8,9 @@ interface EventDao {
     @Query("SELECT * FROM events ORDER BY time ASC")
     fun getAllEvents(): Flow<List<EventEntity>>
 
+    @Query("SELECT id FROM events WHERE isBookmarked = 1")
+    suspend fun getBookmarkedEventIds(): List<String>
+
     @Query("SELECT * FROM events WHERE isBookmarked = 1")
     fun getBookmarkedEvents(): Flow<List<EventEntity>>
 

@@ -35,9 +35,13 @@ class EventListViewModel @Inject constructor(
         when (event) {
             is EventListEvent.Refresh -> {
                 getEvents(forceRefresh = true)
+                fetchLocation()
             }
             is EventListEvent.ToggleBookmark -> {
                 toggleBookmark(event.eventId, event.isBookmarked)
+            }
+            is EventListEvent.FetchLocation -> {
+                fetchLocation()
             }
         }
     }
@@ -101,5 +105,6 @@ class EventListViewModel @Inject constructor(
 
 sealed class EventListEvent {
     object Refresh : EventListEvent()
+    object FetchLocation : EventListEvent()
     data class ToggleBookmark(val eventId: String, val isBookmarked: Boolean) : EventListEvent()
 }
