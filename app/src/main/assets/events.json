@@ -1,0 +1,272 @@
+[
+  {
+    "id": "1",
+    "title": "Summer Music Festival",
+    "location": "Central Park, New York",
+    "time": 1721516400000,
+    "imageUrl": "https://picsum.photos/seed/event1/400/200",
+    "latitude": 40.785091,
+    "longitude": -73.968285
+  },
+  {
+    "id": "2",
+    "title": "Tech Conference 2024",
+    "location": "Convention Center, San Francisco",
+    "time": 1724281200000,
+    "imageUrl": "https://picsum.photos/seed/event2/400/200",
+    "latitude": 37.784463,
+    "longitude": -122.401404
+  },
+  {
+    "id": "3",
+    "title": "Food & Wine Expo",
+    "location": "Downtown, Chicago",
+    "time": 1726873200000,
+    "imageUrl": "https://picsum.photos/seed/event3/400/200",
+    "latitude": 41.878113,
+    "longitude": -87.629799
+  },
+  {
+    "id": "4",
+    "title": "Art Gallery Opening",
+    "location": "Arts District, Los Angeles",
+    "time": 1729378800000,
+    "imageUrl": "https://picsum.photos/seed/event4/400/200",
+    "latitude": 34.0407,
+    "longitude": -118.2468
+  },
+  {
+    "id": "5",
+    "title": "Marathon 2024",
+    "location": "Boston, MA",
+    "time": 1713182400000,
+    "imageUrl": "https://picsum.photos/seed/event5/400/200",
+    "latitude": 42.3601,
+    "longitude": -71.0589
+  },
+  {
+    "id": "6",
+    "title": "Jazz Night",
+    "location": "New Orleans, LA",
+    "time": 1715814000000,
+    "imageUrl": "https://picsum.photos/seed/event6/400/200",
+    "latitude": 29.9511,
+    "longitude": -90.0715
+  },
+  {
+    "id": "7",
+    "title": "Startup Pitch Day",
+    "location": "Austin, TX",
+    "time": 1718406000000,
+    "imageUrl": "https://picsum.photos/seed/event7/400/200",
+    "latitude": 30.2672,
+    "longitude": -97.7431
+  },
+  {
+    "id": "8",
+    "title": "Comic Con",
+    "location": "San Diego, CA",
+    "time": 1721862000000,
+    "imageUrl": "https://picsum.photos/seed/event8/400/200",
+    "latitude": 32.7157,
+    "longitude": -117.1611
+  },
+  {
+    "id": "9",
+    "title": "Film Festival",
+    "location": "Park City, UT",
+    "time": 1705622400000,
+    "imageUrl": "https://picsum.photos/seed/event9/400/200",
+    "latitude": 40.6461,
+    "longitude": -111.498
+  },
+  {
+    "id": "10",
+    "title": "Science Fair",
+    "location": "Seattle, WA",
+    "time": 1710975600000,
+    "imageUrl": "https://picsum.photos/seed/event10/400/200",
+    "latitude": 47.6062,
+    "longitude": -122.3321
+  },
+  {
+    "id": "11",
+    "title": "Yoga in the Park",
+    "location": "Miami, FL",
+    "time": 1713567600000,
+    "imageUrl": "https://picsum.photos/seed/event11/400/200",
+    "latitude": 25.7617,
+    "longitude": -80.1918
+  },
+  {
+    "id": "12",
+    "title": "Hackathon 2024",
+    "location": "Berlin, Germany",
+    "time": 1716159600000,
+    "imageUrl": "https://picsum.photos/seed/event12/400/200",
+    "latitude": 52.52,
+    "longitude": 13.405
+  },
+  {
+    "id": "13",
+    "title": "Literature Festival",
+    "location": "Edinburgh, Scotland",
+    "time": 1723244400000,
+    "imageUrl": "https://picsum.photos/seed/event13/400/200",
+    "latitude": 55.9533,
+    "longitude": -3.1883
+  },
+  {
+    "id": "14",
+    "title": "Fashion Week",
+    "location": "Milan, Italy",
+    "time": 1726786800000,
+    "imageUrl": "https://picsum.photos/seed/event14/400/200",
+    "latitude": 45.4642,
+    "longitude": 9.19
+  },
+  {
+    "id": "15",
+    "title": "Blockchain Summit",
+    "location": "London, UK",
+    "time": 1729378800000,
+    "imageUrl": "https://picsum.photos/seed/event15/400/200",
+    "latitude": 51.5074,
+    "longitude": -0.1278
+  },
+  {
+    "id": "16",
+    "title": "Wine Tasting",
+    "location": "Bordeaux, France",
+    "time": 1731970800000,
+    "imageUrl": "https://picsum.photos/seed/event16/400/200",
+    "latitude": 44.8378,
+    "longitude": -0.5792
+  },
+  {
+    "id": "17",
+    "title": "Oktoberfest",
+    "location": "Munich, Germany",
+    "time": 1726873200000,
+    "imageUrl": "https://picsum.photos/seed/event17/400/200",
+    "latitude": 48.1351,
+    "longitude": 11.582
+  },
+  {
+    "id": "18",
+    "title": "Carnival",
+    "location": "Rio de Janeiro, Brazil",
+    "time": 1707519600000,
+    "imageUrl": "https://picsum.photos/seed/event18/400/200",
+    "latitude": -22.9068,
+    "longitude": -43.1729
+  },
+  {
+    "id": "19",
+    "title": "Cherry Blossom Festival",
+    "location": "Tokyo, Japan",
+    "time": 1711666800000,
+    "imageUrl": "https://picsum.photos/seed/event19/400/200",
+    "latitude": 35.6762,
+    "longitude": 139.6503
+  },
+  {
+    "id": "20",
+    "title": "Vivid Sydney",
+    "location": "Sydney, Australia",
+    "time": 1716505200000,
+    "imageUrl": "https://picsum.photos/seed/event20/400/200",
+    "latitude": -33.8688,
+    "longitude": 151.2093
+  },
+  {
+    "id": "21",
+    "title": "Glastonbury Festival",
+    "location": "Pilton, UK",
+    "time": 1719356400000,
+    "imageUrl": "https://picsum.photos/seed/event21/400/200",
+    "latitude": 51.1557,
+    "longitude": -2.5855
+  },
+  {
+    "id": "22",
+    "title": "Burning Man",
+    "location": "Black Rock City, NV",
+    "time": 1724540400000,
+    "imageUrl": "https://picsum.photos/seed/event22/400/200",
+    "latitude": 40.7864,
+    "longitude": -119.2065
+  },
+  {
+    "id": "23",
+    "title": "Comic-Con Russia",
+    "location": "Moscow, Russia",
+    "time": 1727902800000,
+    "imageUrl": "https://picsum.photos/seed/event23/400/200",
+    "latitude": 55.7558,
+    "longitude": 37.6173
+  },
+  {
+    "id": "24",
+    "title": "Diwali Celebration",
+    "location": "Mumbai, India",
+    "time": 1730415600000,
+    "imageUrl": "https://picsum.photos/seed/event24/400/200",
+    "latitude": 19.076,
+    "longitude": 72.8777
+  },
+  {
+    "id": "25",
+    "title": "Christmas Market",
+    "location": "Vienna, Austria",
+    "time": 1733007600000,
+    "imageUrl": "https://picsum.photos/seed/event25/400/200",
+    "latitude": 48.2082,
+    "longitude": 16.3738
+  },
+  {
+    "id": "26",
+    "title": "New Year's Eve Fireworks",
+    "location": "Dubai, UAE",
+    "time": 1735686000000,
+    "imageUrl": "https://picsum.photos/seed/event26/400/200",
+    "latitude": 25.2048,
+    "longitude": 55.2708
+  },
+  {
+    "id": "27",
+    "title": "St Patrick's Day",
+    "location": "Dublin, Ireland",
+    "time": 1710630000000,
+    "imageUrl": "https://picsum.photos/seed/event27/400/200",
+    "latitude": 53.3498,
+    "longitude": -6.2603
+  },
+  {
+    "id": "28",
+    "title": "Montreal Jazz Festival",
+    "location": "Montreal, Canada",
+    "time": 1719442800000,
+    "imageUrl": "https://picsum.photos/seed/event28/400/200",
+    "latitude": 45.5017,
+    "longitude": -73.5673
+  },
+  {
+    "id": "29",
+    "title": "Fuji Rock Festival",
+    "location": "Niigata, Japan",
+    "time": 1722034800000,
+    "imageUrl": "https://picsum.photos/seed/event29/400/200",
+    "latitude": 36.9329,
+    "longitude": 138.8006
+  },
+  {
+    "id": "30",
+    "title": "Tomorrowland",
+    "location": "Boom, Belgium",
+    "time": 1721343600000,
+    "imageUrl": "https://picsum.photos/seed/event30/400/200",
+    "latitude": 51.091,
+    "longitude": 4.3667
+  }
+]
