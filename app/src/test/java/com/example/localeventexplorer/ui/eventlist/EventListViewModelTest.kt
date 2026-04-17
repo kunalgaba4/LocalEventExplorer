@@ -3,6 +3,7 @@ package com.example.localeventexplorer.ui.eventlist
 import com.example.localeventexplorer.domain.model.Event
 import com.example.localeventexplorer.domain.repository.EventRepository
 import com.example.localeventexplorer.domain.repository.Resource
+import com.example.localeventexplorer.util.LocationClient
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.flowOf
@@ -13,6 +14,7 @@ import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
 import org.mockito.Mockito.`when`
+import org.mockito.Mockito.anyBoolean
 import org.mockito.MockitoAnnotations
 
 @ExperimentalCoroutinesApi
@@ -20,6 +22,9 @@ class EventListViewModelTest {
 
     @Mock
     private lateinit var repository: EventRepository
+
+    @Mock
+    private lateinit var locationClient: LocationClient
     
     private lateinit var viewModel: EventListViewModel
     private val testDispatcher = StandardTestDispatcher()
@@ -40,9 +45,10 @@ class EventListViewModelTest {
         val events = listOf(
             Event("1", "Title", "Loc", 123L, "url", 0.0, 0.0)
         )
-        `when`(repository.getEvents(false)).thenReturn(flowOf(Resource.Success(events)))
+        `when`(repository.getEvents(anyBoolean())).thenReturn(flowOf(Resource.Success(events)))
+        `when`(locationClient.getCurrentLocation()).thenReturn(null)
         
-        viewModel = EventListViewModel(repository)
+        viewModel = EventListViewModel(repository, locationClient)
         advanceUntilIdle()
 
         assertEquals(events, viewModel.state.value.events)
@@ -53,9 +59,10 @@ class EventListViewModelTest {
     @Test
     fun `getEvents updates state with error`() = runTest {
         val errorMessage = "Error message"
-        `when`(repository.getEvents(false)).thenReturn(flowOf(Resource.Error(errorMessage)))
+        `when`(repository.getEvents(anyBoolean())).thenReturn(flowOf(Resource.Error(errorMessage)))
+        `when`(locationClient.getCurrentLocation()).thenReturn(null)
         
-        viewModel = EventListViewModel(repository)
+        viewModel = EventListViewModel(repository, locationClient)
         advanceUntilIdle()
 
         assertEquals(errorMessage, viewModel.state.value.error)

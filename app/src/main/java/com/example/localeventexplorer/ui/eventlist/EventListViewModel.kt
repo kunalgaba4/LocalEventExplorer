@@ -3,7 +3,6 @@ package com.example.localeventexplorer.ui.eventlist
 import android.location.Location
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.localeventexplorer.domain.model.Event
 import com.example.localeventexplorer.domain.repository.EventRepository
 import com.example.localeventexplorer.domain.repository.Resource
 import com.example.localeventexplorer.util.LocationClient

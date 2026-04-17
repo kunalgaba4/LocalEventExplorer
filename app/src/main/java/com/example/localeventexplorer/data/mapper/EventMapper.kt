@@ -29,16 +29,3 @@ fun EventEntity.toEvent(): Event {
         isBookmarked = isBookmarked
     )
 }
-
-fun Event.toEventEntity(): EventEntity {
-    return EventEntity(
-        id = id,
-        title = title,
-        location = location,
-        time = time,
-        imageUrl = imageUrl,
-        latitude = latitude,
-        longitude = longitude,
-        isBookmarked = isBookmarked
-    )
-}

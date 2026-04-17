@@ -24,8 +24,6 @@ class EventRepositoryImpl @Inject constructor(
     override fun getEvents(forceRefresh: Boolean): Flow<Resource<List<Event>>> = flow {
         emit(Resource.Loading())
 
-        val localEvents = dao.getAllEvents().map { entities -> entities.map { it.toEvent() } }
-        
         // Simple TTL check: 5 minutes
         val lastUpdated = 0L
         val isCacheExpired = System.currentTimeMillis() - lastUpdated > 5 * 60 * 1000
