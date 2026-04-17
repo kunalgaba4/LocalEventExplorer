@@ -90,3 +90,6 @@ sequenceDiagram
 - **Dependency Injection**: Decoupled components for testability.
 - **Error Handling**: Graceful handling of network failures.
 - **Resource Management**: Efficient use of background workers and database caching.
+
+## Demo
+![App Demo](Location.mp4)
