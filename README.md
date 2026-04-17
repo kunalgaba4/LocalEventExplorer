@@ -48,7 +48,7 @@ graph TD
 
     View --> VM
     VM --> RepoIntf
-    RepoImpl ..|> RepoIntf
+    RepoImpl -.-> RepoIntf
     RepoImpl --> Remote
     RepoImpl --> Local
 ```
