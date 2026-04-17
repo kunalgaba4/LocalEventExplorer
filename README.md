@@ -92,4 +92,4 @@ sequenceDiagram
 - **Resource Management**: Efficient use of background workers and database caching.
 
 ## Demo
-![App Demo](media/Location.mp4)
+<video src="media/Location.mp4" width="320" height="640" controls></video>
